@@ -5,18 +5,18 @@ export default {
     Secure your application with Content-Security-Policy headers.
     Enabling these headers will permit content from a trusted domain and all its subdomains.
     @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
-    "Content-Security-Policy": "default-src 'self' example.com *.example.com",
-    */
+	*/
+    "Content-Security-Policy": "default-src 'self'",
 			/*
     You can also set Strict-Transport-Security headers.
     These are not automatically set because your website might get added to Chrome's HSTS preload list.
     Here's the code if you want to apply it:
+	*/
     "Strict-Transport-Security" : "max-age=63072000; includeSubDomains; preload",
-    */
 			/*
     Permissions-Policy header provides the ability to allow or deny the use of browser features, such as opting out of FLoC - which you can use below:
+	*/
     "Permissions-Policy": "interest-cohort=()",
-    */
 			/*
     X-XSS-Protection header prevents a page from loading if an XSS attack is detected.
     @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
